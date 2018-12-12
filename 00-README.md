@@ -4,6 +4,9 @@
 ... and building on [Jekyll on GitHub Pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 ... to eventually use the combination for blogging using GitHub GISTs.
 
+Useful tips/pointers during my excursion:
+ - http://jmcglone.com/guides/github-pages/
+
 # Setup
 
 Largely following ["Setting up GitHub Pages locally with Jekyll"](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/) to bootstrap my site.
