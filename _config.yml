@@ -48,7 +48,7 @@ exclude:
   - convert
   - serve.sh
   - 00-README.md
-  - _posts/2018-12-12-welcome-to-jekyll.markdown
+  - extras
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
