@@ -14,13 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Irregular Motif
-email: eric--dotgoeshere--engstrom@something-exactly-like-gmail-dot-com
 description: >- # this means to ignore newlines until "baseurl:"
   Whatever, Wherefore, and Why(not), but only occasionally and intermittently.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: crimson_egret
+
+email: eric-dot-engstrom@something-like-gmail-dot-com
+
 github_username:  eengstrom
+twitter_username: crimson_egret
+linkedin_username: e-engstrom
+googleplus_username: +EricEngstrom
 
 # Build settings
 markdown: kramdown
