@@ -11,8 +11,8 @@ What is this oxymoronic "*Irregular Motif*", you are likely to ask... Well, itâ€
 Rather than dive into anything else **really** about me, Iâ€™ll just refer you to my other online presences:
 
  * [GitHub](https://github.com/eengstrom)
- * [Stack Overflow](https://superuser.com/users/367026/eggo?tab=profile)
- * [Linked In](https://www.linkedin.com/in/eric-engstrom-a772455/)
+ * [Stack Overflow](https://superuser.com/users/367026/crimson-egret)
+ * [Linked In](https://www.linkedin.com/in/e-engstrom)
  * [Google+](https://plus.google.com/u/0/+EricEngstrom)
  * [Google Scholar publications list](https://scholar.google.com/citations?user=QUX6EOAAAAAJ&hl=en)
 
