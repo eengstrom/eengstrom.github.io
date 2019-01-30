@@ -1,3 +1,11 @@
+# Regular Usage
+
+ * run `./serve.sh`
+ * add posts(s) to `_posts`
+ * ... iterate
+ * add and push via `git add`, etc
+ * push to github, which implicitly publishes.
+
 # META Notes
 
 ... on setting up [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/)
@@ -35,8 +43,6 @@ Largely following ["Setting up GitHub Pages locally with Jekyll"](https://help.g
 # Importing my old WordPress
 
 Using [Jekyll's importers](http://import.jekyllrb.com/):
-
-
 
 # Things to investigate
 
