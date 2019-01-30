@@ -29,6 +29,7 @@ theme: minima
 
 plugins:
   - jekyll-feed
+  - jekyll-gist    # https://github.com/jekyll/jekyll-gist
 
 # Set up permalinks
 #/blog/:year/:month/:day/:title
