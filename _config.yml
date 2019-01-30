@@ -49,6 +49,7 @@ exclude:
   - serve.sh
   - 00-README.md
   - extras
+  - favicons/README.md
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
