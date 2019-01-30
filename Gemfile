@@ -17,7 +17,6 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
-
 # Per: https://github.com/jekyll/jekyll-gist
 gem 'jekyll-gist'
 
