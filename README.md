@@ -68,6 +68,7 @@ Tips from [Jekyll Minima Docs](https://github.com/jekyll/minima#customization)
 # Things to investigate
 
  - Import old wordpress posts using [Jekyll's importers](http://import.jekyllrb.com/)
+ - add CV and other ideas from https://github.com/jmcglone/jmcglone.github.io
  - http://getbootstrap.com/getting-started/
  - https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-1/
  - [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
