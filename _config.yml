@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Irregular Motif
+author: Eric Engstrom (aka Crimson Egret)
 description: >- # this means to ignore newlines until "baseurl:"
   Whatever, Wherefore, and Why(not), but only occasionally and intermittently.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -24,7 +25,9 @@ email: eric-dot-engstrom@something-like-gmail-dot-com
 github_username:  eengstrom
 twitter_username: crimson_egret
 linkedin_username: e-engstrom
+stackoverflow_username: 4027368/crimson-egret
 googleplus_username: +EricEngstrom
+googlescholar_username: QUX6EOAAAAAJ
 
 # Build settings
 markdown: kramdown

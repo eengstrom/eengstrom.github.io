@@ -10,10 +10,10 @@ What is this oxymoronic "*Irregular Motif*", you are likely to ask... Well, it�
 
 Rather than dive into anything else **really** about me, I’ll just refer you to my other online presences:
 
- * [GitHub](https://github.com/eengstrom)
- * [Stack Overflow](https://superuser.com/users/367026/crimson-egret)
- * [Linked In](https://www.linkedin.com/in/e-engstrom)
- * [Google+](https://plus.google.com/u/0/+EricEngstrom)
- * [Google Scholar publications list](https://scholar.google.com/citations?user=QUX6EOAAAAAJ&hl=en)
+<div>
+  {%- include social.html -%}
+</div>
 
-(*NO Facebook* – I can’t stand Facebook.  Buy me a beer sometime and I’ll explain why ... and you can try to convince me I’m wrong, or at least hypocritical.)
+Note *NO Facebook* – I can’t stand Facebook.  Buy me a beer sometime and I’ll explain why ... and you can try to convince me I’m wrong, or at least hypocritical.
+
+Also, I used to include my small list of publications, but instead let's just reference my [Google Scholar publications list](https://scholar.google.com/citations?user=QUX6EOAAAAAJ)

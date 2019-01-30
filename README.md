@@ -49,9 +49,21 @@ Anything else below are simply my (meta-)notes on how I set things up or other r
 
 # Customizations
 
+## Crimson
+
+I'm using `#DC143C` as my color code for many things.
+
 ## Adding favicons
 
 Followed [Jekyll Minima Docs](https://github.com/jekyll/minima#add-your-favicons), using [RealFavIconGenerator.net](https://realfavicongenerator.net/), with modified icons from [The Noun Project](https://thenounproject.com/) (under CC-by, by [Laura Breier](https://thenounproject.com/laura1435/)).
+
+## Modifying stock headers/footers
+
+Tips from [Jekyll Minima Docs](https://github.com/jekyll/minima#customization)
+
+    mkdir _includes
+    cp -p $(bundle show minima)/_includes/footer.html _includes
+    edit _includes/footer.html
 
 # Things to investigate
 
