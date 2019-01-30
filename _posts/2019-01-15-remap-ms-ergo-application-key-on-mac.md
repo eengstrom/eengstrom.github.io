@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  Remap MS Ergonomic Keyboard "Application/Submenu" Key on Mac OS X
-date:   2019-01-15
+description:  Remap Microsoft Ergonomic Keyboard "Application/Submenu" Key on Mac OS X
+date:   2019-01-15 15:00:00 -0600
 tags:   karabiner, keyboard, macos
 ---
 
