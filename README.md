@@ -17,6 +17,12 @@ Anything else below are simply my (meta-)notes on how I set things up or other r
  * ... using tips/pointers from [Jonathan McGlone](http://jmcglone.com/guides/github-pages/) (just a random find),
  * ... to eventually use the combination for blogging using GitHub GISTs.
 
+# Regular References
+
+  * [Kramdown syntax](https://kramdown.gettalong.org/syntax.html)
+  * [Jekyll cheatsheet](https://devhints.io/jekyll)
+  * [Minima theme](https://github.com/jekyll/minima)
+
 # Regular Usage
 
  * run `./serve.sh`,
@@ -26,7 +32,9 @@ Anything else below are simply my (meta-)notes on how I set things up or other r
 
 # Setup
 
-  * Create a repository on GitHub called `USER.github.io`, or via API:
+  * Create a repository on GitHub called `USER.github.io`, or
+    via [GitHub's API](https://gist.github.com/caspyin/2288960)
+    (c.f. [this](https://stackoverflow.com/questions/2423777/is-it-possible-to-create-a-remote-repo-on-github-from-the-cli))
 
         curl -u 'eengstrom' https://api.github.com/user/repos -d '{"name":"eengstrom.github.io"}'
         git clone git@github.com:eengstrom/eengstrom.github.io.git
@@ -65,11 +73,46 @@ Tips from [Jekyll Minima Docs](https://github.com/jekyll/minima#customization)
     cp -p $(bundle show minima)/_includes/footer.html _includes
     edit _includes/footer.html
 
+## Migrate from self-hosted Wordpress
+
+Using [Jekyll's wordpress importer](http://import.jekyllrb.com/docs/wordpress/), and a bit of hackery:
+
+    gem install --user-install unidecode sequel mysql2 htmlentities jekyll-import
+    # https://serverfault.com/questions/127794/forward-local-port-or-socket-file-to-remote-socket-file
+    socat "UNIX-LISTEN:./mysqld.sock,reuseaddr,fork" \
+          EXEC:'ssh user@wphost.example.net socat STDIO UNIX-CONNECT\:/var/run/mysqld/mysqld.sock'
+    # test
+    #mysql -S ./mysqld.sock -u USER -p
+    # convert
+    ruby -r rubygems -e 'require "jekyll-import";
+       JekyllImport::Importers::WordPress.run({
+           "dbname"         => "DBNAME",
+           "user"           => "USER",
+           "password"       => "PASSWORD",
+           "host"           => "localhost",
+           "port"           => "3306",
+           "table_prefix"   => "wp_",
+           "socket"         => "./mysqld.sock",
+        })'
+    cd _posts
+    dos2unix *
+    # https://github.com/aaronsw/html2text
+    pip install html2text
+    for f in *.html; do
+       md=$(echo "$f" | sed 's/html$/md/')
+       (
+         awk '/---/ {mark++} mark<=1' < "$f";
+         echo "---"
+         awk '/---/ {mark++} mark>=2' < "$f" \
+           | html2text - \
+           | tail -n +2
+       ) >"$md"
+    done
+    mv *.md ../../_posts
+
 # Things to investigate
 
- - Import old wordpress posts using [Jekyll's importers](http://import.jekyllrb.com/)
  - add CV and other ideas from https://github.com/jmcglone/jmcglone.github.io
  - http://getbootstrap.com/getting-started/
  - https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-1/
- - [A curl tutorial using GitHub's API](https://gist.github.com/caspyin/2288960)
- - https://stackoverflow.com/questions/2423777/is-it-possible-to-create-a-remote-repo-on-github-from-the-cli
+ - [line numbering code blocks](http://abeysuriya.com/2015/09/17/jekyll-syntax-highlighting.html)
