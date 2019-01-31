@@ -1,9 +1,7 @@
 
 # Irregular Motif
 
-This is the "source" repo for my [personal ramblings and random postings](https://eengstrom.github.io/) which is hosted via [GitHub Pages](https://pages.github.com/) using [Jekyll](https://jekyllrb.com/) and [Minima Theme](https://github.com/jekyll/minima).
-
-Content in this repo and on my website is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+This is the "source" repo for my [personal ramblings and random postings](https://eengstrom.github.io/) which is hosted via [GitHub Pages](https://pages.github.com/) using [Jekyll](https://jekyllrb.com/) and [Minima Theme](https://github.com/jekyll/minima). Content in this repo and on my website is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 Anything else below are simply my (meta-)notes on how I set things up or other random GitHub Pages or Jekyll references.
 
