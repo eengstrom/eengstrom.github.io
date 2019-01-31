@@ -16,7 +16,10 @@ trap 'exit' SIGHUP SIGINT SIGQUIT SIGTERM
 bundle update
 bundle exec jekyll serve &
 
-sleep 2
+while ! (nc -z 127.0.0.1 4000 >/dev/null 2>&1); do
+  echo waiting for server to startup...
+  sleep 1
+done
 
 URL="http://localhost:4000"
 open ${URL} \
