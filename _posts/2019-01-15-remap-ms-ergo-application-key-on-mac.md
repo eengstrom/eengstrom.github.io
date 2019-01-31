@@ -4,9 +4,12 @@ title:  Remap MS Ergonomic Keyboard "Application/Submenu" Key on Mac OS X
 description:  Remap Microsoft Ergonomic Keyboard "Application/Submenu" Key on Mac OS X
 date:   2019-01-15 15:00:00 -0600
 tags:   karabiner, keyboard, macos
+excerpt_separator: <!--more-->
 ---
 
-Let's say you have a pretty nice Microsoft Natural Ergonomic Keyboard attached to your Mac, but it's got this otherwise useless **`Application/Submenu`** key on the right side.  You want it to be something useful, perhaps mimicking the right **`Option/Alt`** key on the standard Apple keyboard.  Here's how you can remap that otherwise useless **`Application`** key to something useful under Mac OS using Karabiner (with thanks to [StackExchange] and [KeyChatter])
+Some keyboards geared towards Windows have useless keys for a Mac.  Can they be remapped?
+<!--more-->
+Well, perhaps like me, say you have a pretty nice Microsoft Natural Ergonomic Keyboard attached to your Mac, but it's got this otherwise useless **`Application/Submenu`** key on the right side.  You want it to be something useful, perhaps mimicking the right **`Option/Alt`** key on the standard Apple keyboard.  Here's how you can remap that otherwise useless **`Application`** key to something useful under Mac OS using Karabiner (with thanks to [StackExchange] and [KeyChatter])
 
 * Install Karabiner-Elements
 

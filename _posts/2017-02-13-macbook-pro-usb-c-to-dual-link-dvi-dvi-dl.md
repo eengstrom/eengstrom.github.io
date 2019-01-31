@@ -3,6 +3,7 @@ layout: post
 title: MacBook Pro USB-C to Dual-Link DVI (DVI-DL)
 date: '2017-02-13 14:14:33 -0600'
 tags: mac, usb-c, dvi
+excerpt_separator: <!--more-->
 ---
 
 So, you've got a nice large 30" display (e.g.
@@ -13,7 +14,9 @@ or
 that can
 render 2560x1600 @ 60 Hz, but it has a Dual-Link DVI connector. And, you have
 a nice new MacBook Pro 2016 with only USB-C connectors. You might think it
-would be easy to connect, but this might turn out as a total PITA, because any
+would be easy to connect, Right?
+<!--more-->
+But this might turn out as a total PITA, because any
 straightforward solutions (involving simple adapters with physical
 compatibility) won't cut it - it's more complicated...
 

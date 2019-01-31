@@ -6,6 +6,8 @@ tags: pfSense, firewall
 images: /images/2017-05-22-pfsense/
 ---
 
+`pfSense` doesn't seem to have a simple *"bridge-all-NICs"* option.  Really?
+
 In the past I've used *"raw"* `pf` on FreeBSD as a firewall for a variety of
 situations both large and small, but this week I started playing with an
 inexpensive, fanless, multi-NIC box as a potential firewall and router running

@@ -6,7 +6,9 @@ date:   2018-12-13 13:00:00 -0600
 tags:   ansible, password, keyring, 1password
 ---
 
-Just learning Ansible, I quickly became tired of repeatedly typing my remote user password to allow `ansible[-playbook]` to become root on the remote system via `sudo`.  I toyed with the idea of using [`ansible_vault`](https://docs.ansible.com/ansible/latest/cli/ansible-vault.html), as many have suggested (here: [1][1],[2][2],[3][3],[4][4]), which looks something like this snippet (e.g. from a `{host,group}_vars/*` file):
+Just learning Ansible, I quickly became tired of repeatedly typing my remote user password to allow `ansible[-playbook]` to become root on the remote system via `sudo`.  Wanting something secure too.  Too much to ask?
+
+I toyed with the idea of using [`ansible_vault`](https://docs.ansible.com/ansible/latest/cli/ansible-vault.html), as many have suggested (here: [1][1],[2][2],[3][3],[4][4]), which looks something like this snippet (e.g. from a `{host,group}_vars/*` file):
 
     {% raw %}
     ansible_user: USER

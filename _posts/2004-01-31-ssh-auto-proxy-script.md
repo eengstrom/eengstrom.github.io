@@ -3,11 +3,13 @@ layout: post
 title: SSH Auto-Proxy Script
 date: '2004-01-31 13:51:37 -0600'
 tags: ssh, proxy
+excerpt_separator: <!--more-->
 ---
 
 If you've ever added a `ProxyCommand` directive to your `ssh` config file,
-but you are on a portable computer only need that directive
-sometimes. Other times you might be behind that nasty corporate firewall or on
+but you are on a portable computer only need that directive sometimes.
+ <!--more-->
+Other times you might be behind that nasty corporate firewall or on
 the network with the proxy server? Since the `ProxyCommand` configuration item
 can be just about anything you like, as long as it reads from standard-input
 and writes to standard-output, we can use that fact and write a wrapper around

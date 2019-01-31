@@ -5,8 +5,10 @@ date: '2017-05-17 13:19:06 -0500'
 tags: bash, security
 ---
 
-For a number of reasons, I've been playing with
-[OneTimeSecret](http://onetimesecret.com), a nice little service that allows
+I've been playing with
+[OneTimeSecret][ots], and wanted `bash` scripted access to it.  I had to write it myself.
+
+[OneTimeSecret][ots] is a nice little service that allows
 you to share a secret with someone else and know that it can only be viewed
 once. Additional features such as Time To Live (TTL) and Encrypted secrets,
 plus direct email to the intended recipient are nice bonuses.
@@ -16,3 +18,5 @@ script, and while the RESTful API is helpful, and I could have used `curl`, I
 decided that I could easily provide a simpler interface with functions for
 scripts and a command line interface.
 [Check it out on GitHub](https://github.com/eengstrom/onetimesecret-bash).
+
+[ots]: http://onetimesecret.com

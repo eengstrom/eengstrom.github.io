@@ -34,6 +34,15 @@ markdown: kramdown
 theme: minima
 # https://github.com/jekyll/minima
 
+# show excerpts
+# https://jekyllrb.com/docs/posts/#post-excerpts
+# https://github.com/jekyll/minima#enabling-excerpts-on-the-home-page
+show_excerpts: true
+# will show 1st paragraph, or specify in post header:
+# ---
+# excerpt_separator: <!--more-->
+# ---
+
 plugins:
   - jekyll-feed
   - jekyll-gist    # https://github.com/jekyll/jekyll-gist

@@ -5,12 +5,16 @@ date: '2004-01-30 17:16:15 -0600'
 tags: ssh, proxy, http, firewall
 ---
 
+Here's a hack showing how to tunnel ssh through an http-proxy server
+without any server-side modifications.
+
+Why would I want this? Perhaps:
+
  * Can't use SSH on the standard port 22?
  * Need to tunnel through a proxy server?
  * Work behind a draconian firewall and can't SSH directly?
 
-No problem. Here's a hack showing how to tunnel through an http-proxy server
-without any server-side modifications.
+Regardless, No problem.
 
 > _Note to the reader: This post is a verbatim copy of a static page I wrote
 > back in 2004 or so, which, largely because it's been so referenced by Google
