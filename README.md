@@ -112,6 +112,12 @@ Using [Jekyll's wordpress importer](http://import.jekyllrb.com/docs/wordpress/),
 
 # Things to investigate
 
+ - tag cloud(s)
+   - https://github.com/pattex/jekyll-tagging
+   - https://superdevresources.com/tag-cloud-jekyll/
+   - http://longqian.me/2017/02/09/github-jekyll-tag/
+   - http://tomnorian.com/a-liquid-tag-cloud-for-jekyll-blogs.html
+ - https://stackoverflow.com/questions/45769857/css-to-add-to-jekyll-minima-not-completely-override-it?rq=1
  - add CV and other ideas from https://github.com/jmcglone/jmcglone.github.io
  - http://getbootstrap.com/getting-started/
  - https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-1/
