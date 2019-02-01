@@ -43,6 +43,14 @@ show_excerpts: true
 # excerpt_separator: <!--more-->
 # ---
 
+# simplify the default permalink for posts
+# by date is too much for my volume.
+collections:
+  posts:
+    output: true
+    permalink: /musings/:title
+
+
 plugins:
   - jekyll-feed
   - jekyll-gist    # https://github.com/jekyll/jekyll-gist
