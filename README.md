@@ -116,7 +116,9 @@ Using [Jekyll's wordpress importer](http://import.jekyllrb.com/docs/wordpress/),
    - http://longqian.me/2017/02/09/github-jekyll-tag/
    - http://tomnorian.com/a-liquid-tag-cloud-for-jekyll-blogs.html
  - https://stackoverflow.com/questions/45769857/css-to-add-to-jekyll-minima-not-completely-override-it?rq=1
- - add CV and other ideas from https://github.com/jmcglone/jmcglone.github.io
+ - add CV and other ideas from:
+   - https://github.com/jmcglone/jmcglone.github.io
+   - http://jmcglone.com/guides/github-pages/
  - http://getbootstrap.com/getting-started/
  - https://experimentingwithcode.com/creating-a-jekyll-blog-with-bootstrap-4-and-sass-part-1/
  - [line numbering code blocks](http://abeysuriya.com/2015/09/17/jekyll-syntax-highlighting.html)
