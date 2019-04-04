@@ -12,6 +12,9 @@ set -e  # exit on error
 trap 'kill $(jobs -p) 2>/dev/null' EXIT
 trap 'exit' SIGHUP SIGINT SIGQUIT SIGTERM
 
+# Handle updating bundler itself
+bundle --version >/dev/null ||
+ ( gem install bundler && bundler update --bundler )
 # Update jekyll/ruby modules and start server
 bundle update
 bundle exec jekyll serve &
@@ -22,6 +25,7 @@ while ! (nc -z 127.0.0.1 4000 >/dev/null 2>&1); do
 done
 
 URL="http://localhost:4000"
+sleep 1
 open ${URL} \
   || start ${URL} \
   || echo "open browser and point at '$URL'"
