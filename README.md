@@ -24,7 +24,7 @@ Anything else below are simply my (meta-)notes on how I set things up or other r
 # Regular Usage
 
  * run `./serve.sh`,
- * add posts(s) to `_posts`,
+ * add posts(s) to `_posts` using `newpost.sh Tile of the new post`,
  * ... iterate ...
  * `add`, `commit`, and `push` to GitHub, which implicitly publishes.
 
