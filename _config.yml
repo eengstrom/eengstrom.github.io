@@ -65,9 +65,9 @@ exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
-  - serve.sh
   - README.md
   - LICENSE
+  - bin
   - extras
   - favicons/README.md
 #   - node_modules
