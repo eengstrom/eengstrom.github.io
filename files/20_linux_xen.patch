@@ -1,0 +1,50 @@
+*** 20_linux_xen.orig	2019-03-18 11:11:57.000000000 -0500
+--- 20_linux_xen	2019-07-15 19:41:30.810703315 -0500
+***************
+*** 91,96 ****
+--- 91,100 ----
+    type="$4"
+    args="$5"
+    xen_args="$6"
++   ver=""
++   if $($grub_file --is-x86-multiboot2 ${xen_dirname}/${xen_basename}); then
++      ver="2"
++   fi
+    if [ -z "$boot_device_id" ]; then
+        boot_device_id="$(grub_get_device_id "${GRUB_DEVICE}")"
+    fi
+***************
+*** 130,145 ****
+          else
+              xen_rm_opts="no-real-mode edd=off"
+          fi
+! 	multiboot	${rel_xen_dirname}/${xen_basename} placeholder ${xen_args} \${xen_rm_opts}
+  	echo	'$(echo "$lmessage" | grub_quote)'
+! 	module	${rel_dirname}/${basename} placeholder root=${linux_root_device_thisversion} ro ${args}
+  EOF
+    if test -n "${initrd}" ; then
+      # TRANSLATORS: ramdisk isn't identifier. Should be translated.
+      message="$(gettext_printf "Loading initial ramdisk ...")"
+      sed "s/^/$submenu_indentation/" << EOF
+  	echo	'$(echo "$message" | grub_quote)'
+! 	module	--nounzip   ${rel_dirname}/${initrd}
+  EOF
+    fi
+    sed "s/^/$submenu_indentation/" << EOF
+--- 134,149 ----
+          else
+              xen_rm_opts="no-real-mode edd=off"
+          fi
+! 	multiboot${ver}	${rel_xen_dirname}/${xen_basename} placeholder ${xen_args} \${xen_rm_opts}
+  	echo	'$(echo "$lmessage" | grub_quote)'
+! 	module${ver}	${rel_dirname}/${basename} placeholder root=${linux_root_device_thisversion} ro ${args}
+  EOF
+    if test -n "${initrd}" ; then
+      # TRANSLATORS: ramdisk isn't identifier. Should be translated.
+      message="$(gettext_printf "Loading initial ramdisk ...")"
+      sed "s/^/$submenu_indentation/" << EOF
+  	echo	'$(echo "$message" | grub_quote)'
+! 	module${ver}	--nounzip   ${rel_dirname}/${initrd}
+  EOF
+    fi
+    sed "s/^/$submenu_indentation/" << EOF
