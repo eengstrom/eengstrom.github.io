@@ -25,7 +25,7 @@ cd /etc/grub.d
 patch -c -i 20_linux_xen.patch
 ```
 
-I think for the short term, or until Grub 2.04 (with [this "official" patch][grub-patch-git]) becomes mainline in Debian/Ubuntu, I think this is a much simpler solution than booting directly via EFI and does not require rebuilding Grub from source.
+For the short term, or until Grub 2.04 (with [this "official" patch][grub-patch-git]) becomes mainline in Debian/Ubuntu, I think this is a much simpler solution than booting directly via EFI and does not require rebuilding Grub from source.
 
 [issue-ubuntuforums]: https://ubuntuforums.org/showthread.php?t=2413434
 [issue-nabble]: http://xen.1045712.n5.nabble.com/EFI-boot-unsuccessful-with-Ubuntu-18-04-dom0-tp5744870p5744905.html
