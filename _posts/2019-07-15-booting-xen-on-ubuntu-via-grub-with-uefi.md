@@ -14,7 +14,18 @@ A fix for the issue is in Grub 2.04, but current stable releases of Debian and U
 
 Simpler, and working for me on Ubuntu 18.04[.02] and Grub 2.02 (specifically 2.02-2ubuntu8.13), I was able to make use of [a first-draft patch][grub-patch-v1] and [modify it to directly patch `/etc/grub.d/20_linux_xen`.][modified-patch]
 
-I think for the short term, or until Grub 2.04 (with [this patch][grub-patch-git]) becomes mainline in Debian/Ubuntu, I think this is a much simpler solution.
+```
+{% include_relative content/20_linux_xen.patch %}
+```
+
+Apply this patch with:
+
+```
+cd /etc/grub.d
+patch -c -i 20_linux_xen.patch
+```
+
+I think for the short term, or until Grub 2.04 (with [this "official" patch][grub-patch-git]) becomes mainline in Debian/Ubuntu, I think this is a much simpler solution than booting directly via EFI and does not require rebuilding Grub from source.
 
 [issue-ubuntuforums]: https://ubuntuforums.org/showthread.php?t=2413434
 [issue-nabble]: http://xen.1045712.n5.nabble.com/EFI-boot-unsuccessful-with-Ubuntu-18-04-dom0-tp5744870p5744905.html
