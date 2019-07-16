@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 If you have Ubuntu 18.04 (or possibly even 16.x or earlier) and are trying to boot a XEN kernel using GRUB2[.efi] on a UEFI system, you will likely run into "blank screen/hanging" problems as others have found (e.g. [here][issue-ubuntuforums] and [here][issue-nabble]).
 <!--more-->
 
-A fix for the issue is in Grub 2.04, but current stable releases of Debian and Ubuntu are still using Grub 2.02 - specifically, Debian (as of version 10, aka Buster) therefore downstream Ubuntu (18.4/Bionic, and 19.04/Disco, at the moment).  I see that Grub 2.04 is in Debian Testing (11 / Bullseye), so hopefully it will make it into Ubuntu soon.  Until then, there are some, IMO, overly complicated solutions are to get [XEN to boot directly via EFI][XenProject-EFI-Boot] or [building GRUB from source][XenProject-grub-source].
+A fix for the issue is in Grub 2.04, but current stable releases of Debian and Ubuntu are still using Grub 2.02 - specifically, Debian (as of version 10, aka Buster) therefore downstream Ubuntu (18.4/Bionic, and 19.04/Disco, at the moment).  I see that Grub 2.04 is in Debian Testing (11 / Bullseye), so hopefully it will make it into Ubuntu soon.  Until then, there are some, IMO, overly complicated solutions are to get [XEN to boot directly via EFI][XenProject-EFI-Boot] or [building GRUB from source][XenProject-grub-boot].
 
 Simpler, and working for me on Ubuntu 18.04[.02] and Grub 2.02 (specifically 2.02-2ubuntu8.13), I was able to make use of [a first-draft patch][grub-patch-v1] and [modify it to directly patch `/etc/grub.d/20_linux_xen`.][modified-patch]
 
