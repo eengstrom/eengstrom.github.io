@@ -49,4 +49,5 @@ For your case, best to confirm both com port and speed via the documentation for
 ---
 
 Useful references:
- - [freebsd-handbook](https://www.freebsd.org/doc/handbook/serialconsole-setup.html)
+ - [FreeBSD Handbook](https://www.freebsd.org/doc/handbook/serialconsole-setup.html)
+ - [UART selection for FreeBSD <= 10.x](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=210903)
