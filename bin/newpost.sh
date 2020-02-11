@@ -5,12 +5,14 @@ DIRNAME=$(dirname "$0")
 POSTDIR=$(realpath $(dirname "${DIRNAME}")/_posts)
 warn()  { echo "$PROGNAME: ${@}" 1>&2; }
 die()   { warn "${@}"; exit 1; }
-# usage() { echo "usage: $PROGNAME <MEETING-TYPE>" 1>&2; }
+usage() { echo "usage: $PROGNAME <arbitrary title of new post>" 1>&2; exit ${1:-0}; }
 
 set -e  # exit on error
 #set -x  # print each line as executed
 
 title="$@"
+test -z "${title}" && usage 1
+
 post=$(echo $title | perl -ple 's/\s+/-/g' | tr A-Z a-z)
 file="${POSTDIR}/$(date +%Y-%m-%d)-${post}.md"
 date=$(date '+%Y-%m-%d %T %z')
