@@ -13,14 +13,14 @@ Having previously setup serial console access for Linux systems, here's a recipe
 
 In my case, I needed it for a OOB (out of band) BMC (Baseboard Management Controller) from Dell (iDRAC), but it should apply to any system.
 
-Create or add to `/boot.config`:
+Create or add to (in a **SINGLE LINE**) `/boot.config`:
 ```
 -Dh
 ```
 
 That will setup a "dual console" for the boot loader, mirroring i/o for the boot loader to both standard video console and the serial console.  See also `boot(8)` and `boot.config(5)` man pages.
 
-Add to `/boot/loader.conf`:
+Add to `/boot/loader.conf` (or `/boot/loader.conf.local`):
 ```bash
 boot_multicons="YES"
 boot_serial="YES"
@@ -51,3 +51,4 @@ For your case, best to confirm both com port and speed via the documentation for
 Useful references:
  - [FreeBSD Handbook](https://www.freebsd.org/doc/handbook/serialconsole-setup.html)
  - [UART selection for FreeBSD <= 10.x](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=210903)
+ - [Serial Port Console under FreeBSD](http://kb.unixservertech.com/unix/freebsd/ipmi_sol)
