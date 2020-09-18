@@ -13,12 +13,12 @@ set -e  # exit on error
 title="$@"
 test -z "${title}" && usage 1
 
-post=$(echo $title | perl -ple 's/\s+/-/g' | tr A-Z a-z)
+post=$(echo $title | perl -ple 's/\W+/-/g' | tr A-Z a-z)
 file="${POSTDIR}/$(date +%Y-%m-%d)-${post}.md"
 date=$(date '+%Y-%m-%d %T %z')
 
 echo $file
-echo $date
+#echo $date
 
 cat - >$file <<EOP
 ---
