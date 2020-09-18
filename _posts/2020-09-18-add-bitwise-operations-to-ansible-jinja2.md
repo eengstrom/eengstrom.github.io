@@ -3,7 +3,7 @@ layout: post
 title:  Add Bitwise Operations to Ansible/Jinja2
 description:  Add Bitwise Operations to Ansible/Jinja2
 date:   2020-09-18 16:54:57 -0500
-tags:   Add Bitwise Operations to Ansible/Jinja2
+tags:   ansible, jinja2, filter
 excerpt_separator: <!--more-->
 ---
 
