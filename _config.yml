@@ -62,16 +62,13 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - README.md
+  - LICENSE
   - .gitignore
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - LICENSE
-  - bin
-  - extras
+  - node_modules/
+  - vendor/
+  - bin/
+  - extras/
   - favicons/README.md
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

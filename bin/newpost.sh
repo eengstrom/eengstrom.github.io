@@ -31,4 +31,5 @@ excerpt_separator: <!--more-->
 ---
 EOP
 
-edit $file
+# edit the new file, which will only work if you have this alias defined in your config
+bash -ic "edit $(realpath $file)"
